@@ -1,11 +1,11 @@
-const w = 400;
-const h = 400;
+const w = 200;
+const h = 200;
 const timeMult = 0.01; // interesting effect when timeMult = 0.01
 let particles = [];
 let points = [];
 let maxParticles = 500;
 let a = 0;
-let frames = 120;
+let frames = 360;
 
 function keyPressed() {
   if (key == "s") {
@@ -27,10 +27,10 @@ function draw() {
   // add alpha to background to keep trail
   background(0, 0, 0, 0.1);
 
-  particles.push(new Particle(120, 120, 204));
-  particles.push(new Particle(w - 120, 120, 210));
-  particles.push(new Particle(120, h - 120, 270));
-  particles.push(new Particle(w - 120, h - 120, 300));
+  particles.push(new Particle(0, 0, 205));
+  particles.push(new Particle(w, 0, 215));
+  particles.push(new Particle(0, h, 215));
+  particles.push(new Particle(w, h, 205));
 
   let f = frameCount;
   for (let i = 0; i < particles.length; i++) {
