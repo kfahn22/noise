@@ -22,7 +22,7 @@ class Particle {
     this.curl = createVector();
     this.alpha = 1;
     this.lightness = 100;
-    this.col = color(255, 0, 255, this.alpha);
+    // this.col = color(255, 0, 255, this.alpha);
     this.noise = new OpenSimplexNoise();
     this.timeMult = 0.0002;
   }
@@ -56,7 +56,7 @@ class Particle {
   show(f) {
     noStroke();
     let curl = this.getCurl(f, 0, 0);
-    let col = color(90 * curl.x, 100, this.lightness, this.alpha);
+    let col = color(360 * curl.x, 100, this.lightness, this.alpha);
     fill(col);
     ellipse(this.pos.x, this.pos.y, 4);
   }
