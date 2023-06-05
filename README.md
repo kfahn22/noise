@@ -13,4 +13,4 @@ You can learn more about curl noise from this article by [Keith Peters](https://
 ![](assets/spiral_particles.jpg)
 
 
-![](GIF_swirl.gif)
+![](https://github.com/kfahn22/noise/blob/new/assets/GIF_swirl.gif)
