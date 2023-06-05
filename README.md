@@ -10,4 +10,5 @@ You can learn more about curl noise from this article by [Keith Peters](https://
 
 ## This sketch eliminates particle velocity.  I am adding the particles in the corner of the canvas.
 
+![](assets/spiral_particles.jpg)
 ![](GIF_swirl.gif)
