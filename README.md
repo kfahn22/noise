@@ -7,7 +7,7 @@ You can learn more about curl noise from this article by [Keith Peters](https://
 ![](assets/curl.png)  
 [P5 sketch](https://editor.p5js.org/kfahn/sketches/ePi0_EyKP)
 
-## This sketch eliminates particle velocity. I am adding the particles in the corner of the canvas.
+## This sketch eliminates particle velocity, as suggested by Robot Robby. I am adding the particles in the 4 corners of the canvas.
 
 ![](assets/spiral_particles.jpg)
 [P5 sketch](https://editor.p5js.org/kfahn/sketches/2IjCZHU4P)
