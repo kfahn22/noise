@@ -48,7 +48,7 @@ class Particle {
     );
     this.pos.add(this.vel);
     // comment this line out to get regular particle system
-    // this.pos.add(curl.mult(this.noiseForce));
+    this.pos.add(curl.mult(this.noiseForce));
 
     this.alpha -= this.fadeRate;
     this.lightness -= this.fadeRate * 100;
