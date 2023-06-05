@@ -47,7 +47,8 @@ class Particle {
       f
     );
     this.pos.add(this.vel);
-    this.pos.add(curl.mult(this.noiseForce));
+    // comment this line out to get regular particle system
+    // this.pos.add(curl.mult(this.noiseForce));
 
     this.alpha -= this.fadeRate;
     this.lightness -= this.fadeRate * 100;
@@ -56,7 +57,8 @@ class Particle {
   show(f) {
     noStroke();
     let curl = this.getCurl(f, 0, 0);
-    let col = color(360 * curl.x, 100, this.lightness, this.alpha);
+    let col = color(210, 100, this.lightness, this.alpha);
+    // let col = color(360 * curl.x, 100, this.lightness, this.alpha);
     fill(col);
     ellipse(this.pos.x, this.pos.y, 4);
   }
