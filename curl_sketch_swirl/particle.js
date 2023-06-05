@@ -1,5 +1,5 @@
-// From // Daniel Shiffman
-// http://codingtrain.com/
+// Adapted from Coding Train / Daniel Shiffman
+// https://thecodingtrain.com/challenges/78-simple-particle-system
 // https://youtu.be/UcdigVaIYAk
 
 class Particle {

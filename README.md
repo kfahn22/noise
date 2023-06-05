@@ -4,13 +4,14 @@ Particle sytem with curl noise based on Daniel Shiffman's [Simple Particle Syste
 
 You can learn more about curl noise from this article by [Keith Peters](https://www.bit-101.com/blog/2021/07/curl-noise/).
 
+![](assets/curl.png)  
+[P5 sketch](https://editor.p5js.org/kfahn/sketches/ePi0_EyKP)
 
-![](assets/curl.png)
-
-
-## This sketch eliminates particle velocity.  I am adding the particles in the corner of the canvas.
+## This sketch eliminates particle velocity. I am adding the particles in the corner of the canvas.
 
 ![](assets/spiral_particles.jpg)
+[P5 sketch](https://editor.p5js.org/kfahn/sketches/2IjCZHU4P)
 
+## Here is a GIF of the animation (not a perfect loop, though).
 
 ![](https://github.com/kfahn22/noise/blob/new/assets/GIF_swirl.gif)

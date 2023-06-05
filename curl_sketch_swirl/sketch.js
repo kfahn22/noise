@@ -1,12 +1,17 @@
+// Particle system adapted from http://codingtrain.com / Daniel Shiffman
+// https://thecodingtrain.com/challenges/78-simple-particle-system
+// https://youtu.be/UcdigVaIYAk
+
+// Curl noise code adapted from https://www.youtube.com/watch?v=gvMNixP1S5o / Robot Bobby
+
 const w = 800;
 const h = 400;
-const timeMult = 0.01; 
+const timeMult = 0.01;
 let particles = [];
 let maxParticles = 1000;
 let a = 0;
 let frames = 360;
 let n = 4; // number of spirals
-
 
 function keyPressed() {
   if (key == "s") {
