@@ -1,6 +1,6 @@
 # Particle System with curl noise in P5.js
 
-I have used Daniel Shiffman's code from [Simple Particle System Coding Challenge](https://thecodingtrain.com/challenges/78-simple-particle-system) and [Open Simplex Noise video](https://thecodingtrain.com/tracks/noise/open-simplex-noise) to port Robot Bobby's [Curl Particles youtube tutorial](https://www.youtube.com/watch?v=gvMNixP1S5o) curl particles visualization to P5.js.
+I have used Daniel Shiffman's code from [Simple Particle System Coding Challenge](https://thecodingtrain.com/challenges/78-simple-particle-system) and [Open Simplex Noise video](https://thecodingtrain.com/tracks/noise/open-simplex-noise) to port Robot Bobby's [Curl Particles youtube tutorial](https://www.youtube.com/watch?v=gvMNixP1S5o) visualization to P5.js.
 
 I am adding some curve to the path of the particles using the getCurl function, by passing in the x and y position of the particle as well as a scaled value for the frame rate.
 
