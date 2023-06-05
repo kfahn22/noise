@@ -15,3 +15,25 @@ You can learn more about curl noise from this article by [Keith Peters](https://
 ## Here is a GIF of the animation (not a perfect loop, though).
 
 ![](https://github.com/kfahn22/noise/blob/new/assets/GIF_swirl.gif)
+
+<!-- IMAGE-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/ePi0_EyKP"> <img class="img" src="assets/curl.png" alt="Particle System" style="vertical-align:top;" width="500" /><br /><sub><b>With curl noise<br/>Particle System</b></sub></a></td>
+      <td align="center"><a href="https://editor.p5js.org/codingtrain/sketches/stwbwVLDz"> <img class="img" src="assets/particle.png" alt="Particle System" style="vertical-align:top;" width="500" /><br /><sub><b>With out curl noise<br/>Particle System</b></sub></a></td>
+     <td align="center"><a href=""> <img class="img" src="assets/swirl_particles.png" alt="Particles no velocity" style=" display: block;
+    margin-left: auto;
+    margin-right: auto;" width="500" /><br /><sub><b>Animation<br/>Particle System</b></sub></a></td>
+    </tr>
+    
+     </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- IMAGE-LIST:END -->
+
