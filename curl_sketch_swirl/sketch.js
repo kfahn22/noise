@@ -1,11 +1,17 @@
-const w = 400;
+// Particle system adapted from http://codingtrain.com / Daniel Shiffman
+// https://thecodingtrain.com/challenges/78-simple-particle-system
+// https://youtu.be/UcdigVaIYAk
+
+// Curl noise code adapted from https://www.youtube.com/watch?v=gvMNixP1S5o / Robot Bobby
+
+const w = 800;
 const h = 400;
-const timeMult = 0.01; // interesting effect when timeMult = 0.01
+const timeMult = 0.01;
 let particles = [];
-let points = [];
-let maxParticles = 500;
+let maxParticles = 1000;
 let a = 0;
-let frames = 120;
+let frames = 360;
+let n = 4; // number of spirals
 
 function keyPressed() {
   if (key == "s") {
@@ -27,10 +33,12 @@ function draw() {
   // add alpha to background to keep trail
   background(0, 0, 0, 0.1);
 
-  particles.push(new Particle(120, 120, 204));
-  particles.push(new Particle(w - 120, 120, 210));
-  particles.push(new Particle(120, h - 120, 270));
-  particles.push(new Particle(w - 120, h - 120, 300));
+  for (let i = 0; i < n; i++) {
+    particles.push(new Particle((w * i) / 4, 0, 190 + i * 5));
+    particles.push(new Particle(0, (h * i) / 4, 190 + i * 5));
+    particles.push(new Particle((w * i) / 4, h, 190 + i * 5));
+    particles.push(new Particle(w, (h * i) / 4, 190 + i * 5));
+  }
 
   let f = frameCount;
   for (let i = 0; i < particles.length; i++) {

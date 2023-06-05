@@ -1,5 +1,5 @@
-// From // Daniel Shiffman
-// http://codingtrain.com/
+// Adapted from Coding Train / Daniel Shiffman
+// https://thecodingtrain.com/challenges/78-simple-particle-system
 // https://youtu.be/UcdigVaIYAk
 
 class Particle {
@@ -8,6 +8,7 @@ class Particle {
     this.y = _y;
     this.z = 0;
     this.pos = createVector(this.x, this.y);
+    this.size = 4;
     this.noiseForce = 10;
     this.noiseScale = 0.005; // inverse effect on arcs
     this.fadeRate = 0.005;
@@ -50,6 +51,8 @@ class Particle {
     //let col = color(int(random(200, 250) * curl.x), 100, this.lightness, this.alpha);
     let col = color(this.hue, 100, this.lightness, this.alpha);
     fill(col);
-    ellipse(this.pos.x, this.pos.y, 4);
+    ellipse(this.pos.x, this.pos.y, this.size, this.size);
+    //rect(this.pos.x, this.pos.y, 4*this.size, this.size);
+    //arc(this.pos.x, this.pos.y, 2 * this.size, this.size, 0, 90, PIE);
   }
 }
