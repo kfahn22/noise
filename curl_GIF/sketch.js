@@ -9,6 +9,7 @@ const h = 400;
 const timeMult = 0.01;
 let particles = [];
 const maxParticles = 750; // you can get longer trails by increasing maxParticles
+// let a = 0;
 let adj = 0.01;
 const frames = 60;
 let inc = 0;
@@ -41,22 +42,21 @@ function draw() {
     particles.push(new Particle(w, (h * i) / 4, 190 + i * 5));
   }
 
-  let f = frameCount;
+  // let f = frameCount;
+  // let adj = frameCount * timeMult;
   for (let i = 0; i < particles.length; i++) {
-    // if you want GIF uncomment
-    // particles[i].update(adj);
-    // particles[i].show(adj);
-    particles[i].update(f * adj);
-    particles[i].show(f * adj);
+    //particles[i].update(f * timeMult);
+    //particles[i].show(f * timeMult);
+    particles[i].update(adj);
+    particles[i].show(adj);
   }
 
   while (particles.length > maxParticles) {
     // remove this particle
     particles.shift();
   }
-  // for GIF
-  // inc += 360 / frames;
-  // adj = map(sin(inc), -1, 1, 0.01, 0.61);
+  inc += 360 / frames;
+  adj = map(sin(inc), -1, 1, 0.01, 0.61);
 }
 
 function mousePressed() {
