@@ -4,14 +4,14 @@
 
 // Curl noise code adapted from https://www.youtube.com/watch?v=gvMNixP1S5o / Robot Bobby
 
-const w = 800;
+const w = 400;
 const h = 400;
-const timeMult = 0.01;
 let particles = [];
-let maxParticles = 1000;
-let a = 0;
-let frames = 360;
-let n = 4; // number of spirals
+const maxParticles = 750; // you can get longer trails by increasing maxParticles
+let adj = 0.01;
+const frames = 60;
+let inc = 0;
+const n = 4; // number of spirals
 
 function keyPressed() {
   if (key == "s") {
@@ -42,15 +42,20 @@ function draw() {
 
   let f = frameCount;
   for (let i = 0; i < particles.length; i++) {
-    particles[i].update(f * timeMult);
-    particles[i].show(f * timeMult);
+    // uncomment for GIF
+    // particles[i].update(adj);
+    // particles[i].show(adj);
+    particles[i].update(f * adj);
+    particles[i].show(f * adj);
   }
 
   while (particles.length > maxParticles) {
     // remove this particle
     particles.shift();
   }
-  a += 360 / frames;
+  // for GIF
+  // inc += 360 / frames;
+  // adj = map(sin(inc), -1, 1, 0.01, 0.61);
 }
 
 function mousePressed() {
