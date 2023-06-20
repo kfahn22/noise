@@ -39,6 +39,5 @@ In the animation, the particle velocity is set to zero (suggested by Robot Robby
 
 <!-- IMAGE-LIST:END -->
 
-## Here is a GIF of the animation (not a perfect loop, though).
 
 ![](https://github.com/kfahn22/noise/blob/new/assets/GIF_swirl.gif)
