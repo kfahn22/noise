@@ -8,10 +8,10 @@ const w = 400;
 const h = 400;
 const timeMult = 0.01;
 let particles = [];
-let maxParticles = 750; // you can get longer trails by increasing maxParticles
+const maxParticles = 750; // you can get longer trails by increasing maxParticles
 let a = 0;
-let frames = 360;
-let n = 4; // number of spirals
+const frames = 360;
+const n = 4; // number of spirals
 
 function keyPressed() {
   if (key == "s") {
@@ -50,7 +50,8 @@ function draw() {
     // remove this particle
     particles.shift();
   }
-  a += 360 / frames;
+  //a += 360 / frames;
+  a += 1;
 }
 
 function mousePressed() {
